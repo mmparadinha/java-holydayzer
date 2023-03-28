@@ -1,3 +1,3 @@
 public interface InterfaceFeriados {
-  public String getNome(String data);
+  public void getNome(String data);
 }

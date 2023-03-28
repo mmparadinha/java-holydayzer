@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Feriados /* implements InterfaceFeriados */ {
+public class Feriados implements InterfaceFeriados {
   private List<String> data;
   private List<String> nome;
 
