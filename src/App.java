@@ -19,8 +19,7 @@ public class App {
 
     try {
       String data = dataInput.nextLine();
-      String resultado = lista.getNome(data);
-      System.out.println(resultado);
+      lista.getNome(data);
     } catch (Exception e) {
       System.out.println("A informação inserida deve ser uma string!");
     }

@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Feriados implements InterfaceFeriados {
+public class Feriados /* implements InterfaceFeriados */ {
   private List<String> data;
   private List<String> nome;
 
@@ -9,11 +9,20 @@ public class Feriados implements InterfaceFeriados {
     this.nome = nome;
   }
 
-  public String getNome(String data) {
+  public void getNome(String data) {
     int index = this.data.indexOf(data);
     if (index == -1) {
-      return "Não existe feriado registrado nesta data!";
+      System.out.println("Não existe feriado registrado nesta data! Confira os feriados do ano:");
+      printFeriados();
+      return;
     }
-    return this.nome.get(index);
+    System.out.println(this.nome.get(index));
+  }
+
+  public void printFeriados() {
+    for (int i = 0; i < this.data.size(); i++) {
+      String resultado = this.data.get(i) + " - " + this.nome.get(i);
+      System.out.println(resultado);
+    }
   }
 }
