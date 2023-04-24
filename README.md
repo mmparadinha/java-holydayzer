@@ -1,18 +1,7 @@
-## Getting Started
+# Holydayzer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Pequeno projeto para aplicação de Java, contendo informações de datas e nomes de feriados nacionais. Deve informar o usuário se a data solicitada é feriado e qual. Caso não seja, informa e lista todos os feriados para informar o usuário.
 
-## Folder Structure
+## Resolução
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Inserido um scanner para solicitar a data ao usuário no console. Faz a conferência da informação recebida e retornar aviso caso inválida. Caso válida, procura a data pelo index em um ArrayList.
